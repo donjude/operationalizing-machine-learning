@@ -3,28 +3,35 @@ import json
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = ""
+scoring_uri = "http://75c47124-12c7-469b-9422-fbc7c20d8efe.westus2.azurecontainer.io/score"
 
 # If the service is authenticated, set the key or token
-key = ""
+key = "rLrjncQeM2UMZX7IxaD6pxMbKKjqS4WF"
 
 # Two sets of data to score, so we get two results back
 data = {
     "data": [
         {
-            "instant": 1,
-            "date": "2013-01-01 00:00:00,000000",
-            "season": 1,
-            "yr": 0,
-            "mnth": 1,
-            "weekday": 6,
-            "weathersit": 2,
-            "temp": 0.344167,
-            "atemp": 0.363625,
-            "hum": 0.805833,
-            "windspeed": 0.160446,
-            "casual": 331,
-            "registered": 654,
+            "age": 57,
+	     "job": "technician",
+	     "marital": "married",
+	     "education": "high.school",
+	     "default": "no",
+	     "housing": "no",
+	     "loan": "yes",
+	     "contact": "cellular",
+	     "month": "may",
+	     "day_of_week": "mon",
+	     "duration": 371,
+	     "campaign": 1,
+	     "pdays": 999,
+	     "previous": 1,
+	     "poutcome": "failure",
+	     "emp.var.rate": -1.8,
+	     "cons.price.idx": 92.89,
+	     "cons.conf.idx": -46.2,
+	     "euribor3m": 1.299,
+	     "nr.employed": 5099.1,
         },
     ]
 }
