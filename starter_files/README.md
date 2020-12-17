@@ -56,9 +56,33 @@ Below are the various descriptions of the Key steps that were followed for the m
 
 
 
-Enable logging
-Swagger Documentation
-Consume model endpoints
+4. **Enable logging:**
+
+    **Application logging**
+    ![Application insight](images/appinsight1.png)
+
+    **logging with** `log.py`
+    ![Logging](images/logging1.png)
+
+
+5. **Swagger Documentation**
+
+    ![swagger1](images/swagger1.png)
+    ![swagger2](images/swagger2.png)
+    ![swagger3](images/swagger3.png)
+
+
+
+6. **Consume model endpoints:**
+    ![consumer_model](images/consumer_model.png)
+
+    **Benchmarking**
+    ![benchmarking1](images/benchmarking1.png)
+    ![benchmarking2](images/benchmarking2.png)
+    ![benchmarking3](images/benchmarking3.png)
+    ![benchmarking4](images/benchmarking4.png)
+
+
 Create and publish a pipeline
 Documentation
 
