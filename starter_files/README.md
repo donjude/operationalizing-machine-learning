@@ -48,7 +48,14 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![Best model](images/best_model2.png)
 
 
-3. **Deploy the best model:** Deploying a machine learning model is the process of shipping machine learning models to production environment so that it can provide predictions that can be consumed by other processes, applications or software. Machine learning models only become useful when they are deployed because it is at this stage that the value of the model process can be realized.
+3. **Deploy the best model:** Deploying a machine learning model is the process of shipping machine learning models to production environment so that it can provide predictions that can be consumed by other processes, applications or software. Machine learning models only become useful when they are deployed because it is at this stage that the value of the modelling process can be realized.
+
+    **Model Deployment**
+    ![Model Deployment](images/deploy1.png)
+    ![Model Deployment](images/deploy2.png)
+
+
+
 Enable logging
 Swagger Documentation
 Consume model endpoints
