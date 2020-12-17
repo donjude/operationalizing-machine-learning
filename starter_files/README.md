@@ -21,7 +21,8 @@ Below are the various descriptions of the Key steps that were followed for the m
 
     > **Service Principal:** is a security identity used by user-created applications, services and automation tools to access specific Azure resources.
 
-    **Authentication and Services principal configuration image**
+
+    **Authentication and Service Principal configuration**
 ![Service principal creation confirmation](images/service_p1.png)
 ![](images/service_p2.png)
 ![](images/service_p3.png)
@@ -29,7 +30,9 @@ Below are the various descriptions of the Key steps that were followed for the m
 ![](images/service_p5.png)
 
 
+
 2. **Automated ML Experiment:** At this step the machine learning experiment is created using Automated ML. This experiment consist of setting up your workspace, setting up your auto ml configurations, configuring a compute cluster and using the compute cluster to run the experiment. Several machine learning models are produced by this step in addition to the best model.
+
 
     **Registered Dataset**
     ![Registered Dataset](images/dataset1.png)
@@ -38,6 +41,7 @@ Below are the various descriptions of the Key steps that were followed for the m
 
     **Completed Experiment**
     ![Completed experiment](images/experiment1.png)
+
 
     **Best Model**
     ![Best model](images/best_model1.png)
