@@ -3,12 +3,12 @@
 
 # Operationalizing Machine Learning
 
-*TODO:* Write an overview to your project.
-This project is part of the Udacity Azure ML Engineer Nanodegree. It is the second project after the first project [Optimizing a Pipeline in Azure](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution), to build an Azure Auto ML model and productionalize the model.
+## Overview
+This project is part of the Udacity Azure ML Engineer Nanodegree. It is the second project after the first project [Optimizing a Pipeline in Azure](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution), to build and productionalized an Azure Auto ML model.
 
-The main focus of the project is about Productionalizing a Machine Learning Model, so we would not be focusing on optimization or creating a perfect machine learning model, but rather show the processes and the steps in which machine learning models in Azure are productionalized.
+The main focus of the project is about Productionalizing a Machine Learning Model, so we would not be focusing on optimization or creating a perfect machine learning model, but rather show the processes and the steps in which machine learning models in Azure ML are productionalized.
 
-This project focuses on two parts using the bankmarketing dataset as described in [Project One](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution)
+This project made use of the benchmarking dataset as described in [Project One](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution)
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
@@ -51,7 +51,6 @@ Below are the various descriptions of the Key steps that were followed for the m
 3. **Deploy the best model:** Deploying a machine learning model is the process of shipping machine learning models to production environment so that it can provide predictions that can be consumed by other processes, applications or software. Machine learning models only become useful when they are deployed because it is at this stage that the value of the modelling process can be realized.
 
     **Model Deployment**
-    ![Model Deployment](images/deploy1.png)
     ![Model Deployment](images/deploy2.png)
 
 
@@ -65,7 +64,7 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![Logging](images/logging1.png)
 
 
-5. **Swagger Documentation**
+5. **Swagger Documentation:** Swagger is a tool that helps build, document, and consume RESTful web services. It eases the documentation efforts of HTTP APIs. Azure supports Swagger and in this project Swagger was used to consume the API for the deployed Machine Learning model.
 
     ![swagger1](images/swagger1.png)
     ![swagger2](images/swagger2.png)
@@ -73,10 +72,11 @@ Below are the various descriptions of the Key steps that were followed for the m
 
 
 
-6. **Consume model endpoints:**
+6. **Consume model endpoints:** The deployed machine learning model can be consumed through a model endpoint. An endpoint is an HTTP API or URL(s) that is exposed over the network so that interactions can happened with a trained model via HTTP requests (GET or POST).
+
     ![consumer_model](images/consumer_model.png)
 
-    **Benchmarking**
+    **Benchmarking** Benchmarking was screated to enhance performance and also for the purpose of anomally detection.
     ![benchmarking1](images/benchmarking1.png)
     ![benchmarking2](images/benchmarking2.png)
     ![benchmarking3](images/benchmarking3.png)
