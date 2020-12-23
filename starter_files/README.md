@@ -83,7 +83,25 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![benchmarking4](images/benchmarking4.png)
 
 
-Create and publish a pipeline
+7. **Create and publish a pipeline**
+    
+    **Created pipeline**
+    ![pipeline1](images/pipeline1.png)
+
+    **Pipeline Endpoint**
+    ![pipeline1](images/pipeline2.png)
+
+    **Dataset with AutoML module**
+    ![pipeline1](images/pipeline3.png)
+
+    **Published Pipeline**
+    ![pipeline1](images/pipeline4.png)
+
+    **RunDetails Widget**
+    ![pipeline1](images/pipeline5.png)
+
+    **Scheduled ML Studio**
+
 Documentation
 
 ## Screen Recording
