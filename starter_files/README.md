@@ -89,18 +89,20 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![pipeline1](images/pipeline1.png)
 
     **Pipeline Endpoint**
-    ![pipeline1](images/pipeline2.png)
+    ![pipeline2](images/pipeline2.png)
 
     **Dataset with AutoML module**
-    ![pipeline1](images/pipeline3.png)
+    ![pipeline3](images/pipeline3.png)
 
     **Published Pipeline**
-    ![pipeline1](images/pipeline4.png)
+    ![pipeline4](images/pipeline4.png)
 
     **RunDetails Widget**
-    ![pipeline1](images/pipeline5.png)
+    ![pipeline4](images/pipeline5.png)  
 
-    **Scheduled ML Studio**
+    **ML Studio Scheduled run**
+    ![pipeline5](images/endpoint_schedule_run.png)
+
 
 Documentation
 
