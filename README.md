@@ -36,7 +36,6 @@ Below are the various descriptions of the Key steps that were followed for the m
 
     **Registered Dataset**
     ![Registered Dataset](images/dataset1.png)
-    ![Registered Dataset](images/dataset2.png)
 
 
     **Completed Experiment**
