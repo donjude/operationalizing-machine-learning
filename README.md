@@ -1,9 +1,20 @@
-# Operationalizing Machine Learning
+*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-This Project consist of two parts:
-1. Shipping and consuming an Automated Machine Learning model in production using Microsoft's Cloud-based machine learning platform **Azure Machine Learning**.
-2. Creating a machine learning pipeline
 
-In this project an automated machine learning model is deployed into production using Azure Container Instance(ACI) which deploys the model as an API web service that provides and HTTP endpoint that can be consumed
-This Project focuses on shipping Machine Learning models into production as well as automating the machine learning modeling processMicrosoft Cloud-based machine learning platform **Azure Machine Learning**
-The solution for this project can be found in the folder [starter_files](./starter_files)
+# Your Project Title Here
+
+*TODO:* Write an overview to your project.
+
+## Architectural Diagram
+*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+
+## Key Steps
+*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
+
+*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+## Screen Recording
+*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+## Standout Suggestions
+*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
