@@ -97,7 +97,7 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![pipeline4](images/pipeline5.png)  
 
     **ML Studio Scheduled run**
-    ![pipeline5](images/endpoint_schedule_run.png)
+    ![pipeline5](images/schedule_run.png)
 
 
 Documentation
