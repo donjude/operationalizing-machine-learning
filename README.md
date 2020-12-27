@@ -94,10 +94,10 @@ Below are the various descriptions of the Key steps that were followed for the m
     ![pipeline4](images/pipeline4.png)
 
     **RunDetails Widget**
-    ![pipeline4](images/pipeline5.png)  
+    ![pipeline5](images/pipeline5.png)  
 
     **ML Studio Scheduled run**
-    ![pipeline5](images/schedule_run.png)
+    ![pipeline6](images/schedule_run.png)
 
 
 Documentation
