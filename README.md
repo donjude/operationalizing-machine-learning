@@ -77,9 +77,6 @@ Below are the various descriptions of the Key steps that were followed for the m
 
     **Benchmarking** Benchmarking was screated to enhance performance and also for the purpose of anomally detection.
     ![benchmarking1](images/benchmarking1.png)
-    ![benchmarking2](images/benchmarking2.png)
-    ![benchmarking3](images/benchmarking3.png)
-    ![benchmarking4](images/benchmarking4.png)
 
 
 7. **Create and publish a pipeline**
