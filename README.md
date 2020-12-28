@@ -118,5 +118,10 @@ Below are the various descriptions of the Key steps that were followed for the m
 
 [![Youtube video](images/youtube.png)](https://youtu.be/7KnWtW2hops)
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Future Improvement
+To improve the project in the future, the following would be considered:
+1. Automate the ML lifecycle with Jenkins or GitHub and Azure Pipelines to create a continuous integration process that trains the model whenever changes occur in the git repo.
+2. Retrain the model on new data to detect data drift and performance degradation.
+3. Publish key events to Azure EventGrid that would alerts on events in the ML lifecycle.
+4. Convert the model to ONNX to improve performance.
+
