@@ -1,6 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-
 # Operationalizing Machine Learning
 
 ## Overview
@@ -15,7 +12,7 @@ The main focus of the project is about Productionalizing a Machine Learning Mode
 This project made use of the benchmarking dataset as described in [Project One](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution)
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+![architectural_diagram](images/project2_pipeline.png)
 
 ## Key Steps
 The key steps followed have further been explained below. I leverage my own Azure ML workspace so authentication with service principal was necessary to enable my desktop automate the SDK and other runs smoothly without any interactive logins.
