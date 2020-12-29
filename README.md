@@ -116,7 +116,7 @@ Below are the various descriptions of the Key steps that were followed for the m
 
 ## Screen Recording
 
-[![Youtube video](images/youtube.png)](https://youtu.be/7KnWtW2hops)
+[![Youtube video](images/youtube.png)](https://www.youtube.com/watch?v=FPQz4voAjTg)
 
 ## Future Improvement
 To improve the project in the future, the following would be considered:
