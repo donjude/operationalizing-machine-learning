@@ -10,9 +10,15 @@ In the other part of the project I created a Machine Learning pipeline using Azu
 The main focus of the project is about Productionalizing a Machine Learning Model, so we would not be focusing on optimization or creating a perfect machine learning model, but rather show the processes and the steps in which machine learning models in Azure ML are productionalized.
 
 This project made use of the benchmarking dataset as described in [Project One](https://github.com/donjude/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Solution)
+<br/>
+<br/>
 
 ## Architectural Diagram
+This diagram below visualizes the flow of operations of this project from start to finish.
+
 ![architectural_diagram](images/project2_pipeline.png)
+
+<br/>
 
 ## Key Steps
 The key steps followed have further been explained below. I leverage my own Azure ML workspace so authentication with service principal was necessary to enable my desktop automate the SDK and other runs smoothly without any interactive logins.
@@ -34,6 +40,12 @@ Below are the various descriptions of the Key steps that were followed for the m
 
 
     **Authentication and Service Principal configuration**
+    Instructions:
+    - Make sure azure cli is install and login to Azure from the bash shell.
+    - Install the Azure Machine Learning extension.
+    - Create a Service Principal and enable Azure active directory role base authentication for SDK.
+    - Allow the Service Principal to have access to Azure ML workspace.
+
 ![Service principal creation confirmation](images/service_p1.png)
 ![](images/service_p2.png)
 ![](images/service_p3.png)
@@ -41,19 +53,26 @@ Below are the various descriptions of the Key steps that were followed for the m
 ![](images/service_p5.png)
 
 
+<br/>
 
 2. **Automated ML Experiment:** At this step the machine learning experiment is created using Automated ML. This experiment consist of setting up your workspace, setting up your auto ml configurations, configuring a compute cluster and using the compute cluster to run the experiment. Several machine learning models are produced by this step in addition to the best model.
 
 
     **Registered Dataset**
+    - Create an register the Bankmarketing dataset in your workspace.
+
     ![Registered Dataset](images/dataset1.png)
 
 
     **Completed Experiment**
+    - Create and run an Auto ML experiment.
+
     ![Completed experiment](images/experiment1.png)
 
 
     **Best Model**
+    - Auto ML after a successful execution selections the best model created by the experiment.
+
     ![Best model](images/best_model1.png)
     ![Best model](images/best_model2.png)
 
@@ -61,11 +80,16 @@ Below are the various descriptions of the Key steps that were followed for the m
 3. **Deploy the best model:** Deploying a machine learning model is the process of shipping machine learning models to production environment so that it can provide predictions that can be consumed by other processes, applications or software. Machine learning models only become useful when they are deployed because it is at this stage that the value of the modelling process can be realized.
 
     **Model Deployment**
+    - Deploy the best model chosen by Auto ML as Azure Container Instance (ACI)
+
     ![Model Deployment](images/deploy2.png)
 
 
 
 4. **Enable logging:**
+    - Enable Application Insights
+    - Run the code `python logs.py` to view the logs for Application Insights.
+    - Check to see application insights is enabled in the screen shot below.
 
     **Application logging**
     Application insight was enable to actually monitor the performance of the deployed model and enable errors that the model experience.
@@ -74,20 +98,35 @@ Below are the various descriptions of the Key steps that were followed for the m
     **logging with** `log.py`
     ![Logging](images/logging1.png)
 
+<br/>
 
 5. **Swagger Documentation:** Swagger is a tool that helps build, document, and consume RESTful web services. It eases the documentation efforts of HTTP APIs. Azure supports Swagger and in this project Swagger was used to consume the API for the deployed Machine Learning model.
+    - Download the `swagger.json` file from the screen shot above.
+    - Make sure the file is placed in the `swagger` folder together with the other files `serve.py` and `swagger.sh`.
+    - Change the port 80 in the `swagger.sh` file to `9080`.
+    - Run the code `bash swagger.sh` and `python serve.py`
+    - Type `http://localhost:9080` in the browser to open the swagger documentation.
+    - In the Swagger interface type `http://localhost:8000/swagger.json` and click on Explore to display the contents of the API for the model.
 
     ![swagger1](images/swagger1.png)
     ![swagger2](images/swagger2.png)
     ![swagger3](images/swagger3.png)
 
 
+<br/>
 
 6. **Consume model endpoints:** The deployed machine learning model can be consumed through a model endpoint. An endpoint is an HTTP API or URL(s) that is exposed over the network so that interactions can happened with a trained model via HTTP requests (GET or POST). The screen shot belows shows the results that was return by two data points when I made a request to my model.
+
+    - Edit the `endpoint.py` script and replace the scoring URL and the keys with details provided from the deployed model in azure workspace.
+    - Consume the model by executing the script `python endpoint.py`
+    - The results represents the score from two datapoints in the `endpoint.py` json pyaloader.
 
     ![consumer_model](images/consumer_model.png)
 
     **Benchmarking** Benchmarking was screated to enhance performance and also for the purpose of anomally detection.
+
+    - Install Apache Bencmark command-line tool
+    - Edit the API endpoint URL and key in the `benchmark.sh` script to match what we have from Azure ML to consume the model.
     ![benchmarking1](images/benchmarking1.png)
 
 
