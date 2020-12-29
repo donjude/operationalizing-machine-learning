@@ -126,34 +126,52 @@ Below are the various descriptions of the Key steps that were followed for the m
     **Benchmarking** Benchmarking was screated to enhance performance and also for the purpose of anomally detection.
 
     - Install Apache Bencmark command-line tool
-    - Edit the API endpoint URL and key in the `benchmark.sh` script to match what we have from Azure ML to consume the model.
+    - Edit the API URL and key in the `benchmark.sh` script to match that of the deployed model endpoint.
+    - Run `benchmark.sh` to retrieve the performance results as seen below.
+
     ![benchmarking1](images/benchmarking1.png)
 
 
 7. **Create and publish a pipeline**
+    - Run the notebook `aml-pipelines-with-automated-machine-learning-step.ipynb` to create the pipelines.
     
     **Created pipeline**
+    - Create an Auto ML pipeline
+
     ![pipeline1](images/pipeline1.png)
 
     **Pipeline Endpoint**
+    - Create a pipeline for the REST API endpoint.
+
     ![pipeline2](images/pipeline2.png)
 
     **Dataset with AutoML module**
+    - Confirmation of Auto ML pipeline and Bankmarketing dataset
+
     ![pipeline3](images/pipeline3.png)
 
     **Published Pipeline**
+    - Confirmation of the Published pipeline endpoint.
+
     ![pipeline4](images/pipeline4.png)
 
     **RunDetails Widget**
+    - Notebook confirmation of the pipeline run details.
+
     ![pipeline5](images/pipeline5.png)  
 
     **ML Studio Scheduled run**
+    - Azure ML studio confirmation of the pipeline scheduled run.
+
     ![pipeline6](images/schedule_run.png)
 
+<br/>
 
 8. **Documentation**
 
 ## Screen Recording
+
+The link below provides access to the video demonstration of a working machine learning application for the project.
 
 [![Youtube video](images/youtube.png)](https://www.youtube.com/watch?v=FPQz4voAjTg)
 
